@@ -7,9 +7,9 @@ editables:
         path: ctoot
     mpc/0.1@izmar/dev:
         path: mpc
-    vmpc-juce/0.1@izmar/dev:
-        path: vmpc-juce
+    vmpc-fltk/0.1@izmar/dev:
+        path: vmpc-fltk
 layout: layout
 generators: cmake
 workspace_generator: cmake
-root: vmpc-juce/0.1@izmar/dev
+root: vmpc-fltk/0.1@izmar/dev

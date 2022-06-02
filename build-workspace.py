@@ -35,7 +35,7 @@ def run(cmd):
         raise Exception("Command failed: %s" % cmd)
 
 def clean_folders():
-    shutil.rmtree("vmpc-juce/build", ignore_errors=True)
+    shutil.rmtree("vmpc-fltk/build", ignore_errors=True)
     shutil.rmtree("mpc/build", ignore_errors=True)
     shutil.rmtree("ctoot/build", ignore_errors=True)
     shutil.rmtree("moduru/build", ignore_errors=True)
@@ -72,10 +72,10 @@ if args.offline == False:
     else:
         run("git clone https://github.com/izzyreal/mpc")
 
-    if os.path.exists("vmpc-juce"):
-        run("cd vmpc-juce && git pull && cd")
+    if os.path.exists("vmpc-fltk"):
+        run("cd vmpc-fltk && git pull && cd")
     else:
-        run("git clone https://github.com/izzyreal/vmpc-juce")
+        run("git clone https://github.com/theModernSurrealist/vmpc-fltk")
 
 os.chdir("build")
 if args.buildtool == 'vs32':
